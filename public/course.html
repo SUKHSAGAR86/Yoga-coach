@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="icon" href="../public/images/yoga-hero-img.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            margin-left: 60px;
+            margin-right: 60px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(56, 56, 52, 0.4);
+            height: 60px;
+            font-weight: bold;
+        }
+
+        #title {
+            font-size: 30px;
+            color: rgb(108, 3, 212);
+            margin-top: 10px;
+
+        }
+
+        .cot {
+            color: rgb(38, 31, 68);
+            margin-right: 0px;
+        }
+
+        nav {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        nav>span {
+            padding: 20px;
+            color: rgb(38, 31, 68);
+            font-size: 20px;
+           font-weight: bold;
+        }
+
+        nav span:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+            color: red;
+        }
+
+        nav span a {
+            padding: 20px;
+            color: rgb(38, 31, 68);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        nav span a:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+            color: red;
+        }
+
+        #btn-book {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 9px;
+            font-size: 18px;
+            border-radius: 6px;
+            background-color: rgb(106, 3, 212);
+            color: white;
+            display: inline-block;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        #btn-book:hover {
+
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        #container1 {
+            height: 100px;
+            width: auto;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 100px;
+        }
+
+        #container1>span {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(38, 31, 68);
+        }
+
+        #container2 {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-left: 75px;
+        }
+
+        .card {
+            height: 433px;
+            width: 330px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .cardheader {
+            height: 250px;
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        .cardheader img {
+            height: 250px;
+            width: 330px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #cardbody {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cardtitle {
+            font-size: 23px;
+            font-weight: bold;
+            color: rgb(38, 31, 68);
+            cursor: pointer;
+        }
+
+        .cardtitle:hover {
+            color: chocolate;
+        }
+
+        #cardbody p {
+            font-size: 16px;
+            margin-top: 10px;
+
+        }
+
+        #cardbody span {
+            color: gray;
+            padding: 7px;
+        }
+
+        #cardfooter {
+
+            /* margin-top: 10px; */
+            padding: 20px;
+            /* border:1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(38, 31, 68);
+        }
+
+        .joinnow {
+            font-size: 16px;
+            font-weight: bold;
+            color: blueviolet;
+            cursor: pointer
+        }
+
+        .joinnow:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+
+        }
+
+
+        
+footer{
+    height: 600px;
+    background-color:rgb(38,31,68);
+    margin-top: 50px;
+}
+
+.subscribe{
+    text-align: center;
+   padding-top: 30px;
+}
+
+.btn-subscribe{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(255,89,56);
+    margin-top: 15px;
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 575px;
+   
+
+}
+.footercolumn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+
+}
+
+#footerbrandtitle{
+    margin-top: 70px;
+    color:white;
+}
+aside{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+aside>span{
+    color: gray;
+    cursor:pointer;
+}
+
+aside>span:hover{
+    color: white;
+}
+
+
+h2{
+    color: white;
+}
+
+#column>span{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(154, 148, 148);
+    display: block;
+    margin-top: 12px;
+    cursor:pointer;
+}
+#column>span:hover{
+    color: white;
+}
+
+address>span{
+    display:block;
+    margin-bottom: 10px;
+    color:gray;
+    
+}
+
+address a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}
+address a:hover{
+    color:white;
+}
+
+
+.developer{
+    margin-top: 100px;
+}
+.developer span{
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}
+
+.developer a{
+    text-decoration:none;
+    color: grey;
+}
+.developer a:hover{
+    color: white;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <div id="title">
+                <span class="cot">Coach.</span>
+                <span>Yoga</span>
+            </div>
+            <div>
+                <nav>
+                    <span><a href="../index.html">Home</a></span>
+                    <span><a href="#secondpg" style="text-decoration:none;">Courses</a></span>
+                    <span>Events</span>
+                    <span><a href="../index.html#thirdcontainer"style="text-decoration: none;">About</a></span>
+                    <span><a href="./contact.html" style="text-decoration: none;">Contect</a></span>
+                </nav>
+            </div>
+            <div id="btn-book">
+                <span>Book Now</span>
+            </div>
+        </header>
+        <div>
+
+            <div id="container1">
+
+                <span>Upcoming Courses</span>
+                <p style="font-size: 20px;color: gray; font-weight: bold;">Sign up for upcoming weekly classes and events orem ipsum dolor
+                    sit amet, <br>consectetur adipiscing elit.</p>
+
+
+            </div>
+
+            <div id="container2">
+
+                <div class="card">
+                    <div class="cardheader">
+                        <img src="./images/img9.jpg" alt="">
+                    </div>
+                    <div id="cardbody">
+                        <div class="cardtitle">Yoga for Wellness </div>
+                        <p>Thursday's 7pm EST Via Zoom</p>
+                        <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                        <span class="bi bi-people-fill">&nbsp;20 Students</span>
+                    </div>
+                    <div id="cardfooter">
+                        <span class="price">&#36;25.00</span>
+                        <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                                style="font-size:12px;"></span></span>
+
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="cardheader">
+                        <img src="/public/images/card2.jpg" alt="">
+                    </div>
+                    <div id="cardbody">
+                        <div class="cardtitle">Yoga for Preventive Health </div>
+                        <p>Monday 7am EST Via Zoom</p>
+                        <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                        <span class="bi bi-people-fill">&nbsp;26 Students</span>
+                    </div>
+                    <div id="cardfooter">
+                        <span class="price">&#36;50.00</span>
+                        <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                                style="font-size:12px;"></span></span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="cardheader">
+                        <img src="./images/img6.jpg" alt="">
+                    </div>
+                    <div id="cardbody">
+                        <div class="cardtitle">Therapeutic Yoga</div>
+                        <p>In Studio</p>
+                        <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                        <span class="bi bi-people-fill">&nbsp;32 Students</span>
+                    </div>
+                    <div id="cardfooter">
+                        <span class="price">&#36;75.00</span>
+                        <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                                style="font-size:12px;"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container2" style="margin-top: 30px;">
+            <div class="card">
+                <div class="cardheader">
+                    <img src="./images/beautiful-girl-is-engaged-yoga-studio.jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Yoga for Wellness </div>
+                    <p>Thursday's 7pm EST Via Zoom</p>
+                    <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;20 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;25.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <img src="/public/images/beautiful-sexy-woman-doing-fitness.jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Personal Yoga Courses</div>
+                    <p>Monday 7am EST Via Zoom</p>
+                    <span class="bi bi-clock-fill">&nbsp;1 hour 35 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;26 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;45.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <img src="./images/attractive-woman-doing-yoga-home.jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Corporate Yoga Classes</div>
+                    <p> Monday 7am EST Via Zoom</p>
+                    <span class="bi bi-clock-fill">&nbsp;60 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;18 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;55.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="container2" style="margin-top: 30px;">
+            <div class="card">
+                <div class="cardheader">
+                    <img src="./images/women-their-yoga-session.jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Group Yoga classes </div>
+                    <p>Thursday's 7pm EST Via Zoom</p>
+                    <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;20 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;25.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <img src="/public/images/workout-home.jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Yoga for Preventive Health </div>
+                    <p>Monday 7am EST Via Zoom</p>
+                    <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;26 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;50.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="cardheader">
+                    <img src="./images/img7 (1).jpg" alt="">
+                </div>
+                <div id="cardbody">
+                    <div class="cardtitle">Therapeutic Yoga</div>
+                    <p>In Studio</p>
+                    <span class="bi bi-clock-fill">&nbsp;1 hour 15 minutes</span>
+                    <span class="bi bi-people-fill">&nbsp;32 Students</span>
+                </div>
+                <div id="cardfooter">
+                    <span class="price">&#36;75.00</span>
+                    <span class="joinnow">Join Now &nbsp;<span class="bi bi-arrow-right"
+                            style="font-size:12px;"></span></span>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <footer>
+            <div class="subscribe">
+                <h1 style="color:white">Subscribe to our newsletter</h1>
+                <p style="margin-top: -20px; color:gray; font-weight: bold;">Subscribe to get notified daily new motivational & inspiration tips.</p>
+                <input type="text" placeholder="Email Address"
+                    style=" width: 300px; padding: 10px;border-radius: 10px;">
+                <div class="btn-subscribe">Subscribe</div>
+            </div>
+
+            <div class="footercolumn">
+                <div id="column">
+                    <h1 id="footerbrandtitle">Coach.Yoga</h1>
+                    <aside>
+                        <span class="bi bi-youtube"></span>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter-x"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-linkedin"></span>
+                    </aside>
+                </div>
+
+
+                <div id="column">
+                    <h2>About</h2>
+                    <span>Meet Coach</span>
+                    <span>Press</span>
+                    <span>Social Feed</span>
+                    <span> Help</span>
+
+                </div>
+
+
+                <div id="column">
+                    <h2>Blog</h2>
+                    <span>Business Coaching</span>
+                    <span>Relationship</span>
+                    <span>Leadership</span>
+                    <span>Life Coaching</span>
+                    <span>Time Managemen</span>
+                </div>
+
+
+                <div id="column">
+                    <h2>Resources</h2>
+                    <span>Online Courses</span>
+                    <span>Books Meditation</span>
+                    <span>Podcast</span>
+                    <span>Albums</span>
+                    <span>Download App</span>
+                </div>
+
+
+                <div id="column">
+                    <h2>Contact Us</h2>
+                    <address>
+                        <span class="bi bi-telephone">
+                            <a href="tel:(+91)6263171801 ms-3">&nbsp;6263171801</a>
+                        </span>
+                        <span class="bi bi-whatsapp">
+                            <a href="https://web.whatsapp.com/+91 6263171801">&nbsp;6263171801</a>
+                        </span>
+                        <span class="bi bi-envelope-at">
+                            <a href="sagarjangde86@gmail.com">&nbsp;coach_yoga112@gmail.com</a>
+
+                        </span>
+                    </address>
+                </div>
+
+            </div>
+
+            <div class="developer">
+                <marquee behavior="scroll" direction="left" scrollamount="6" loop="40">
+                    <span>Developed by:-&nbsp;&nbsp;Sukhsagar Jangde</span>&nbsp;&nbsp;
+                    <span class="bi bi-telephone">
+                        <a href="tel:(+91)6263171801 ms-3">&nbsp;+91 6263171801</a>
+                    </span>&nbsp;&nbsp;
+                    <span class="bi bi-envelope-at">
+                        <a href="sagarjangde86@gmail.com">&nbsp;G-mail</a>
+
+                    </span>&nbsp;&nbsp;
+                    <span class="bi bi-whatsapp">
+                        <a href="https://web.whatsapp.com/+91 6263171801">&nbsp;Whatsapp</a>
+                    </span>&nbsp;&nbsp;
+                    <span class="bi bi-telegram">
+                        <a href="https://t.me/+916263171801">&nbsp;Telegram</a>
+                    </span>&nbsp;&nbsp;
+                    <span class="bi bi-linkedin">
+                        <a href="https://www.linkedin.com/in/sukhsagar-jangde-4b0186178/">&nbsp;Linkedin</a></span>
+                        &nbsp;&nbsp;
+                        <span class="bi bi-github" style="margin-left: 6px;">
+                            <a href="https://github.com/SUKHSAGAR86">&nbsp;GitHub</a>
+                        </span>
+                </marquee>
+            </div>
+
+
+
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
